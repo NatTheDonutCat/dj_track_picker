@@ -1,0 +1,41 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Groove Supply</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&family=Fredoka+One&family=Questrial&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/style.css">
+    <script defer src="https://kit.fontawesome.com/e918d10e90.js" crossorigin="anonymous"></script>
+    <script defer src="public/helpers.js"></script>
+    <script defer src="public/script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="appTitle">🎶 Groove Supply 🎶</h1>
+    </header>
+
+    <form id="songInfoForm">
+      <label for="key">Choose a key:</label>
+      <select name="key" id="key"></select>
+      <label for="bpm">Input a bpm:</label>
+      <input type="number" id="bpm" name="bpm" min="1" max="200">
+    </form>
+
+    <button id="playBtn"></button>
+
+    <div id="songInfo">
+      <div id="songCover"></div>
+      <div id="movieText"></div>
+    </div>
+
+    <div id="likeOrDislikeBtns" hidden>
+      <button id="likeBtn"><i class="fa-solid fa-thumbs-up"></i></button>
+      <button id="dislikeBtn"><i class="fa-solid fa-thumbs-down"></i></button>
+    </div>
+
+  </body> 
+
+</html>
